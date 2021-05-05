@@ -16,6 +16,14 @@ export class Detail extends Component {
         });
       });
   };
+  // addToFavo = () => {
+  //   this.setState(
+  //     {
+  //       addToFav: !this.state.addToFav
+  //     },
+  //     () => console.log(this.state.addToFav)
+  //   );
+  // };
 
   render() {
     return (
@@ -31,7 +39,7 @@ export class Detail extends Component {
                 <Link className="m-5 for" onClick={this.props.ajouter}>
                   
                 </Link>
-                <i className="fas fa-heart text-danger favo"></i>
+                
               </h4>
               <h2>Their compon ents</h2>
               <h3>

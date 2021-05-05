@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-
+import {add_Reminder} from '../actions/index'
+import{ connect} from 'react-redux'
+import { Link } from 'react-router-dom';
 
 export class Menu extends Component {
     state = {
@@ -31,10 +33,11 @@ export class Menu extends Component {
                     <h4 className="card-title">{weed.strMeal}</h4>
                     <p className="card-text">
                       <a href={'/Detail/' + weed.idMeal} className="btn btn-warning">Detail</a>
-                      
-                      
-
+                      <Link to="" className="btn btn-warning"><i onClick={() => this.props.add_reminder(weed)} className="fas fa-heart "></i></Link>
+                      <a > </a>
+          
                     </p>
+                   
                   </div>
                 </div>
 
@@ -50,4 +53,5 @@ export class Menu extends Component {
     }
 }
 
-export default Menu
+
+export default connect(null, { add_Reminder })(Menu)

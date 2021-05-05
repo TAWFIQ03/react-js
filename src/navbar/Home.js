@@ -43,7 +43,7 @@ export class Home extends Component {
 
       <div className="theOne">
       <div className="row ">
-        <div className="col-lg ml-lg-5"><h1><p>Meet, Eat &</p>
+        <div className="col-lg hollyy ml-lg-5"><h1><p>Meet, Eat &</p>
           <p>Enjoy The true</p>
               taste</h1>
               <br></br>

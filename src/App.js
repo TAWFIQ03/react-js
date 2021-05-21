@@ -6,6 +6,7 @@ import Menu from './navbar/Menu';
 import Footer from './navbar/Footer';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import Detail from './navbar/Detail';
+import Favorite from './Favorite';
 
 
 
@@ -26,7 +27,7 @@ class  App  extends Component {
     <Nav className="offset-lg-7" title="Item" >
       <Link className="nav-link hully text-dark offset-4" to="/">HOME</Link>
       <Link className="nav-link hully text-dark offset-4" to="/Menu">MENU</Link>
-      <Link className="nav-link hully text-dark offset-4" to="lon2">FAVORITE</Link>
+      <Link className="nav-link hully text-dark offset-4" to="/lon2">FAVORITE</Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
@@ -37,7 +38,7 @@ class  App  extends Component {
 
        <Route path="/Menu"exact component={Menu} />
        <Route path="/Detail/:login"exact component={Detail} />
-       
+       <Route path="/lon2"exact component={Favorite} />
 </div>
  
 <Footer/>
